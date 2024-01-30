@@ -11,6 +11,11 @@ app.use(express.json());
 app.use(
   '/customer',
   session({
+    cookie: {
+      secure: true,
+      maxAge: 60000,
+    },
+    store: new session.MemoryStore(),
     secret: 'fingerprint_customer',
     resave: true,
     saveUninitialized: true,
