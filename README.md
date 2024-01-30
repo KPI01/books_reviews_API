@@ -24,4 +24,3 @@ also they will be able to look for a specific book by ISBN, name or author
 - `POST /customer/auth/login`: login with JSON object in body
 - `PUT /customer/auth/review/:isbn`: creates a new review with query parameter in URL `review`
 - `DELETE /customer/auth/review/:id`: deletes a review with query parameter in URL `id`
-
