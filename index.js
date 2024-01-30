@@ -15,7 +15,7 @@ app.use(
       secure: true,
       maxAge: 60000,
     },
-    store: new session.MemoryStore(),
+    store: '', /** *TODO: Implement a session store **/
     secret: 'fingerprint_customer',
     resave: true,
     saveUninitialized: true,
